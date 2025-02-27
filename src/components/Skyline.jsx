@@ -33,23 +33,22 @@ const Skyline = () => {
         geometry.computeBoundingBox();
         geometry.normalizeNormals();
 
-        // 🟢 Solid Base Material (Purple with Emissive Glow)
+        // 🟢 Solid Base Material (Dark Army Green with Subtle Glow)
         const baseMaterial = new THREE.MeshStandardMaterial({
-          color: 0x4b0082, // Deep purple
-          emissive: 0x5500aa, // Soft neon purple glow
-          emissiveIntensity: 0.5,
-          metalness: 0.7,
+          color: "#0F1A0F", // Deep army green
+          emissive: "#093F09", // Dark green hacker glow
+          emissiveIntensity: 0.4,
+          metalness: 0.6,
           roughness: 0.5,
         });
 
-        // 🔷 Wireframe Building Material (Glowing Neon Blue)
+        // 🔷 Wireframe Building Material (Bright Neon Green)
         const wireframeMaterial = new THREE.MeshBasicMaterial({
-          color: 0x003fff, // Bright neon blue
-          emissive: 0x5500aa, // Soft neon purple glow
-          emissiveIntensity: 0.9,
+          color: "#00FF00", // Pure neon green
+          emissive: "#0F1A0F", // Dark hacker glow
+          emissiveIntensity: .6,
           wireframe: true,
           side: THREE.DoubleSide,
-          metalness: 0.9,
         });
 
         // 🏙️ Split Buildings and Base
